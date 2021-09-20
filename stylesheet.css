@@ -1,6 +1,12 @@
 body {
   font-family:'Audiowide', cursive;
   background-color:green; 
+  width:100%
+  text-align:center 
+}
+
+h {
+  font-weight:heavy;
 }
 
 #nav-table { 
