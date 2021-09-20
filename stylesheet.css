@@ -26,5 +26,17 @@ width: 100%;
 height:15%;
 text-align:center;
 }
+   
+ .float-left
+   {
+     position:absolute;
+     float: left; 
+     margin:10px;
+   }
+   
+   .float-right
+   { position:absolute;
+     float:right;
+   margin:10px;}
 
 
