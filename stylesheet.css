@@ -1,7 +1,13 @@
 body {
   font-family:'Audiowide', cursive;
-  background-color:(0,204,0); }
+  background-color:green; 
+  background-image: url('myBackground.jpg');
+}
 
 .centeritems {
-  text-align: center;
+display: block;
+margin-left: auto;
+margin-right:auto;
+width: 100%;
 }
+
