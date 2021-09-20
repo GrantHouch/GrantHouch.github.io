@@ -4,10 +4,18 @@ body {
   background-image: url('myBackground.jpg');
 }
 
-.centeritems {
+#nav-table { 
+  width: 50%;
+  
+ #nav-td {
+   width: 15%; 
+   text-align:center;
+
+.banner {
 display: block;
 margin-left: auto;
 margin-right:auto;
-width: 100%;
+width: 50%;
 }
+
 
