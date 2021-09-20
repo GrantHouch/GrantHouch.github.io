@@ -6,8 +6,8 @@ body {
 }
 
 h1 {
-  font-weight:heavy;
   font-style: italic;
+  text-decoration: underline;
 }
 
 #nav-table { 
