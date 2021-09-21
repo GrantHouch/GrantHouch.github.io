@@ -1,29 +1,13 @@
-* {
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 body {
   font-family:'Audiowide', cursive;
   background-color:green; 
-  min-height:100vh;
+  width:100%
   text-align:center;
 }
- 
-img {
-  width:500px;
-  height:auto;
-   margin:5px;
-  border: 5px double black;
-  }
-
 h1 {
   font-style: italic;
   text-decoration: underline;
 }
-
 #nav-table { 
   width: 80%;
   text-align:center;
@@ -31,7 +15,6 @@ h1 {
  #nav-th {
    width: 20%; 
    text-align:center;
-
 #banner {
 display: block;
 margin-left: auto;
@@ -41,4 +24,19 @@ height:15%;
 text-align:center;
 }
    
+ .float-left
+   {
+     position:absolute;
+     float: left; 
+     margin:10px;
+   }
+   
+   .float-right
+   { position:absolute;
+     float:right;
+   margin:10px;}
 
+p {
+    word-wrap: break-word;
+   width: 100px;
+}
