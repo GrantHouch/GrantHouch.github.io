@@ -1,7 +1,9 @@
-<title>Grant's Profile App</title>
 <header>
-    <h1>Main Heading</h1>
-    <h2>Subheading</h2>
+    
+    <h1>Grants Profile App</h1>
+    <h2>Sign in</h2>
+    <h3> Search for ID </h3>
+    
 </header>
 
 <!-- Main content section -->
