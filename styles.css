@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+    width: 50%; /* width  */
+    max-width: 500px; /*  max width  */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+img {
+    display: block; /* Remove default inline spacing */
+    width: 100%; /* Make the image responsive and fit the container width */
+    height: auto; /* Maintain the image's aspect ratio */
+}
