@@ -8,8 +8,9 @@ body {
 .image-container {
     position: relative;
     width: 50%; /* width  */
-    max-width: 500px; /*  max width  */
-    margin: 0 auto; /* Center the image horizontally */
+    max-width: 250px; /*  max width  */
+    margin-top: auto; /* Push the image to the bottom */
+    margin-left: 0; /* Align the image to the left */
 }
 
 img {
