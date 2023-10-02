@@ -41,6 +41,37 @@
         <h3 id="findName" type="text"></h3>
         <h3 id="findAge" type="number"></h3> <br><br>
     </div>
+
+
+    <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBZ4iA5CeVkM6oxiaD1aGHqRiOacR1pxwM",
+    authDomain: "profileapp-9e8bf.firebaseapp.com",
+    databaseURL: "https://profileapp-9e8bf-default-rtdb.firebaseio.com",
+    projectId: "profileapp-9e8bf",
+    storageBucket: "profileapp-9e8bf.appspot.com",
+    messagingSenderId: "516771937492",
+    appId: "1:516771937492:web:1dee7112548c919ef74f41",
+    measurementId: "G-806T6GFXFX"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+
+  import {getDatabase, ref, get, set, child, update, remove}
+  from: "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"
+
+      
+</script>
     
     
 </body>
