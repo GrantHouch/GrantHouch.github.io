@@ -24,21 +24,21 @@
 
 <div id="firstProfile">
     <h1>First Profile </h1>
-    <h3 id="findName" type = "text"></h3>
-    <h3 id="findAge" type = "number"></h3>
-    <h3 id="findGender" type = "text"></h3>
-    <h3 id="findCountry" type = "text"></h3>
-    <h3 id="findImageOne" type = "image"></h3>
+    <h3 id="findName1" type = "text"></h3>
+    <h3 id="findAge1" type = "number"></h3>
+    <h3 id="findGender1" type = "text"></h3>
+    <h3 id="findCountry1" type = "text"></h3>
+    <h3 id="findImage1" type = "image"></h3>
     <br><br>
 </div>
 
 <div id="secondProfile">
     <h1>Second Profile</h1>
-    <h3 id="findName" type = "text"></h3>
-    <h3 id="findAge" type = "number"></h3>
-    <h3 id="findGender" type = "text"></h3>
-    <h3 id="findCountry" type = "text"></h3>
-    <h3 id="findImageOne" type = "image"></h3>
+    <h3 id="findName2" type = "text"></h3>
+    <h3 id="findAge2" type = "number"></h3>
+    <h3 id="findGende2r" type = "text"></h3>
+    <h3 id="findCountry2" type = "text"></h3>
+    <h3 id="findImage2" type = "image"></h3>
     <br><br>
 </div>
 
@@ -88,11 +88,11 @@
             const dbref = ref(db);
             get(child(dbref, "1OHLwWQHLqZixundO8xspW4go4k2"))
             .then((snapshot)=>{
-                findName.innerHTML = "Name: " + snapshot.val().name;
-                findAge.innerHTML = "Age: " + snapshot.val().age;
-                findGender.innerHTML = "Gender: " + snapshot.val().Gender;
-                findCountry.innerHTML = "Country: " + snapshot.val().country;
-                findImage.innerHTML = "Image: " + snapshot.val().image;
+                findName1.innerHTML = "Name: " + snapshot.val().name;
+                findAge1.innerHTML = "Age: " + snapshot.val().age;
+                findGender1.innerHTML = "Gender: " + snapshot.val().Gender;
+                findCountry1.innerHTML = "Country: " + snapshot.val().country;
+                findImage1.innerHTML = "Image: " + snapshot.val().image;
                 )
         }
     }
@@ -101,11 +101,11 @@
             const dbref = ref(db);
             get(child(dbref, "x62AWCy8kTPWMywpR876aASeAZx2"))
             .then((snapshot)=>{
-                findName.innerHTML = "Name: " + snapshot.val().name;
-                findAge.innerHTML = "Age: " + snapshot.val().age;
-                findGender.innerHTML = "Gender: " + snapshot.val().Gender;
-                findCountry.innerHTML = "Country: " + snapshot.val().country;
-                findImage.innerHTML = "Image: " + snapshot.val().image;
+                findName2.innerHTML = "Name: " + snapshot.val().name;
+                findAge2.innerHTML = "Age: " + snapshot.val().age;
+                findGender2.innerHTML = "Gender: " + snapshot.val().Gender;
+                findCountry2.innerHTML = "Country: " + snapshot.val().country;
+                findImage2.innerHTML = "Image: " + snapshot.val().image;
                 )
         }
     }
