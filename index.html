@@ -83,39 +83,35 @@
     var findImage2 = document.querySelector("#findImage2");
 
         //functions to find profile fields and link to firebase 
-        function GetDataP1 (){
-            const dbref = ref(db);
-            get(child(dbref, "1OHLwWQHLqZixundO8xspW4go4k2"))
-            .then((snapshot)=>{
+        function GetDataP1() {
+        const dbref = ref(db);
+        get(child(dbref, "1OHLwWQHLqZixundO8xspW4go4k2"))
+            .then((snapshot) => {
                 findName1.innerHTML = "Name: " + snapshot.val().name;
                 findAge1.innerHTML = "Age: " + snapshot.val().age;
-                findGender1.innerHTML = "Gender: " + snapshot.val().Gender;
+                findGender1.innerHTML = "Gender: " + snapshot.val().gender; // Use lowercase 'gender'
                 findCountry1.innerHTML = "Country: " + snapshot.val().country;
-                findImage1.innerHTML = "Image: " + snapshot.val().image;
-                )
-        }
+                findImage1.src = snapshot.val().image; // Set the 'src' attribute of the image
+            });
     }
 
-        function GetDataP2 (){
-            const dbref = ref(db);
-            get(child(dbref, "x62AWCy8kTPWMywpR876aASeAZx2"))
-            .then((snapshot)=>{
+    function GetDataP2() {
+        const dbref = ref(db);
+        get(child(dbref, "x62AWCy8kTPWMywpR876aASeAZx2"))
+            .then((snapshot) => {
                 findName2.innerHTML = "Name: " + snapshot.val().name;
                 findAge2.innerHTML = "Age: " + snapshot.val().age;
-                findGender2.innerHTML = "Gender: " + snapshot.val().Gender;
+                findGender2.innerHTML = "Gender: " + snapshot.val().gender; // Use lowercase 'gender'
                 findCountry2.innerHTML = "Country: " + snapshot.val().country;
-                findImage2.innerHTML = "Image: " + snapshot.val().image;
-                )
-        }
+                findImage2.src = snapshot.val().image; // Set the 'src' attribute of the image
+            });
     }
-      GeDataP1();
-      GeDataP2();
 
-      
+    GetDataP1();
+    GetDataP2();
 </script>
-
-     <img src="grantgram-logo.png" alt="Banner Image">
     
+<img src="grantgram-logo.png" alt="Banner Image">
 </body>
-
+</html>
 
