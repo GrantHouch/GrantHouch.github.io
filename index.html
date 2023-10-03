@@ -86,11 +86,21 @@
     var removeBtn = document.querySelector("#remove");
     var findBtn = document.querySelector("#find"); 
 
-        //functions to find and link to firebase 
-        function FindData (){
-
+        //functions to find profile fields and link to firebase 
+        function GetDataP1 (){
+            const dbref = ref(db);
+            get(child(dbref, "1OHLwWQHLqZixundO8xspW4go4k2"))
+            .then((snapshot)=>{
+                findName.innerHTML = "Name: " + snapshot.val().name;
+                findAge.innerHTML = "Age: " + snapshot.val().age;
+                findGender.innerHTML = "Gender: " + snapshot.val().Gender;
+                findCountry.innerHTML = "Country: " + snapshot.val().country;
+                findImage.innerHTML = "Image: " + snapshot.val().image;
+                )
         }
-  
+    }
+
+      GeDataP1();
 
       
 </script>
