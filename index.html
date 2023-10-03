@@ -21,8 +21,10 @@
 
 <body>
 
+    // profile 1 and 2 divs and ID's
+
 <div id="firstProfile">
-    <h1>Profile One</h1>
+    <h1>First Profile </h1>
     <h3 id="findName" type = "text"></h3>
     <h3 id="findAge" type = "number"></h3>
     <h3 id="findGender" type = "text"></h3>
@@ -31,8 +33,18 @@
     <br><br>
 </div>
 
-    
+<div id="secondProfile">
+    <h1>Second Profile</h1>
+    <h3 id="findName" type = "text"></h3>
+    <h3 id="findAge" type = "number"></h3>
+    <h3 id="findGender" type = "text"></h3>
+    <h3 id="findCountry" type = "text"></h3>
+    <h3 id="findImageOne" type = "image"></h3>
+    <br><br>
+</div>
 
+
+    //firebase script
 
     <script type="module">
   // Import the functions you need from the SDKs you need
@@ -74,6 +86,7 @@
     var removeBtn = document.querySelector("#remove");
     var findBtn = document.querySelector("#find"); 
 
+        //functions to find and link to firebase 
         function FindData (){
 
         }
