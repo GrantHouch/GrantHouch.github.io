@@ -13,7 +13,7 @@
         #findDetails {float: left; width: 50%; background-color: blue; color: black;}
         input {width: 120px;}
 
-     img{  width: 200px; height: 200px; }
+     img{  width: 300px; height: 150px; }
      
  </style>
     
@@ -21,31 +21,17 @@
 
 <body>
 
+<div id="firstProfile">
+    <h1>Profile One</h1>
+    <h3 id="findName" type = "text"></h3>
+    <h3 id="findAge" type = "number"></h3>
+    <h3 id="findGender" type = "text"></h3>
+    <h3 id="findCountry" type = "text"></h3>
+    <h3 id="findImageOne" type = "image"></h3>
+    <br><br>
+</div>
+
     
-     <div id="enterDetails">
-        <h1>Enter Details</h1>
-        <h4>ID</h4> 
-        <input id="enterID" type="text"> 
-
-        <h4>Name</h4> 
-        <input id="enterName" type="text"> 
-
-        <h4>Age</h4> 
-        <input id="enterAge" type="number"> <br><br>
-
-        <button id="insert">INSERT</button>
-        <button id="update">UPDATE</button>
-        <button id="remove">REMOVE</button> <br><br>
-    </div>
-
-      <div id="findDetails">
-        <h1>Find by ID</h1>
-        <h4>ID</h4>
-        <input id="findID" type="text"> <br><br>
-        <button id="find">FIND</button>
-        <h3 id="findName" type="text"></h3>
-        <h3 id="findAge" type="number"></h3> <br><br>
-    </div>
 
 
     <script type="module">
